@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow - Productivity App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .vanta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-['Poppins'] bg-gray-50">
+    <div id="vanta-bg" class="vanta-bg"></div>
+    
+    <header class="px-6 py-4 bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+                    <i data-feather="check-circle" class="text-white"></i>
+                </div>
+                <span class="text-xl font-bold gradient-text">FocusFlow</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Features</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Pricing</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition">Blog</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition">About</a>
+            </nav>
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg font-medium transition shadow-md">
+                Get Started
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative pt-32 pb-20 px-6">
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    <span class="gradient-text">Master Your Time</span>,<br>
+                    <span class="text-gray-800">Amplify Your Life</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                    FocusFlow combines task management, habit tracking, and deep focus tools to help you achieve more with less stress.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition shadow-lg flex items-center justify-center space-x-2">
+                        <i data-feather="download"></i>
+                        <span>Download Now</span>
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-gray-800 px-8 py-4 rounded-xl font-semibold text-lg transition shadow-lg border border-gray-200 flex items-center justify-center space-x-2">
+                        <i data-feather="play-circle"></i>
+                        <span>Watch Demo</span>
+                    </button>
+                </div>
+                <div class="mt-16">
+                    <div class="bg-white/80 backdrop-blur-md rounded-2xl p-1 inline-block shadow-lg">
+                        <img src="http://static.photos/technology/1024x576/42" alt="App screenshot" class="rounded-xl w-full max-w-3xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-6 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Why Choose FocusFlow?</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        We've designed every feature to help you stay focused and productive
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="feature-card bg-gray-50 rounded-2xl p-8 transition duration-300">
+                        <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                            <i data-feather="list" class="text-indigo-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Smart Task Management</h3>
+                        <p class="text-gray-600">
+                            Organize tasks with priorities, due dates, and categories for ultimate clarity.
+                        </p>
+                    </div>
+                    <div class="feature-card bg-gray-50 rounded-2xl p-8 transition duration-300">
+                        <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                            <i data-feather="bar-chart-2" class="text-indigo-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Habit Tracking</h3>
+                        <p class="text-gray-600">
+                            Build better routines with streak tracking and visual progress.
+                        </p>
+                    </div>
+                    <div class="feature-card bg-gray-50 rounded-2xl p-8 transition duration-300">
+                        <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                            <i data-feather="clock" class="text-indigo-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Focus Timer</h3>
+                        <p class="text-gray-600">
+                            Pomodoro timer with customizable intervals and distraction blocking.
+                        </p>
+                    </div>
+                    <div class="feature-card bg-gray-50 rounded-2xl p-8 transition duration-300">
+                        <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                            <i data-feather="trending-up" class="text-indigo-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Progress Analytics</h3>
+                        <p class="text-gray-600">
+                            Visual reports show your productivity trends and improvement areas.
+                        </p>
+                    </div>
+                    <div class="feature-card bg-gray-50 rounded-2xl p-8 transition duration-300">
+                        <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                            <i data-feather="sliders" class="text-indigo-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Custom Workflows</h3>
+                        <p class="text-gray-600">
+                            Tailor the app to your personal productivity style.
+                        </p>
+                    </div>
+                    <div class="feature-card bg-gray-50 rounded-2xl p-8 transition duration-300">
+                        <div class="w-14 h-14 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                            <i data-feather="smartphone" class="text-indigo-600 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-3">Cross-Device Sync</h3>
+                        <p class="text-gray-600">
+                            Seamless experience across all your devices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-6 bg-gradient-to-br from-indigo-50 to-purple-50">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Ready to Transform Your Productivity?</h2>
+                <p class="text-xl text-gray-600 mb-10">
+                    Join thousands of professionals who are achieving more with FocusFlow
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition shadow-lg">
+                        Start Free Trial
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-gray-800 px-8 py-4 rounded-xl font-semibold text-lg transition shadow-lg border border-gray-200">
+                        See Pricing
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Product</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Features</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Pricing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Download</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Community</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>© 2023 FocusFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x6366f1,
+            backgroundColor: 0xf3f4f6
+        })
+    </script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
